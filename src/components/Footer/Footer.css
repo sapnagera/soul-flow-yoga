@@ -1,0 +1,140 @@
+.footer {
+  background: #2a231b;
+  padding: 4rem 2.5rem 2rem;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(245, 240, 232, 0.1);
+}
+
+.footer-brand-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: #f5f0e8;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-brand-logo span {
+  font-style: italic;
+  font-weight: 600;
+  color: #C8CFA0;
+}
+
+.footer-brand-desc {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: rgba(245, 240, 232, 0.5);
+  line-height: 1.9;
+  max-width: 280px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-social-link {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(245, 240, 232, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+  cursor: pointer;
+}
+
+.footer-social-link:hover {
+  border-color: #C8CFA0;
+  background: rgba(200, 207, 160, 0.1);
+}
+
+.footer-col-title {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C8CFA0;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: rgba(245, 240, 232, 0.55);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #f5f0e8;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copy {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: rgba(245, 240, 232, 0.3);
+  letter-spacing: 0.05em;
+}
+
+.footer-copy span {
+  color: #C8CFA0;
+}
+
+.footer-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(245, 240, 232, 0.3);
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
