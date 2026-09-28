@@ -1,23 +1,17 @@
 # Soul Flow Yoga
 
-Soul Flow Yoga is a personal learning project: a responsive yoga studio website built with React and TypeScript. I created it to practise frontend development and deploying a website to Microsoft Azure.
-
-**Live site:** https://nice-moss-08af67210.7.azurestaticapps.net
+Soul Flow Yoga is a personal learning project: a responsive yoga studio website built with React and TypeScript. I made it to practise frontend development and learn how an application can be prepared for deployment to Microsoft Azure.
 
 ## What I built
 
 - A single-page website with home, about, classes, and contact sections
-- Reusable React components styled for different screen sizes
-- A contact form interface for practising React state and form handling
-- An automated deployment workflow using GitHub Actions and Azure Static Web Apps
+- Reusable React components and responsive styling
+- A contact form interface using React state
+- A GitHub Actions workflow configured for Azure Static Web Apps
 
 ## Technologies
 
-- React and TypeScript
-- Vite
-- CSS
-- GitHub Actions
-- Microsoft Azure Static Web Apps
+React, TypeScript, Vite, CSS, GitHub Actions, and Azure Static Web Apps.
 
 ## Run locally
 
@@ -31,10 +25,8 @@ Soul Flow Yoga is a personal learning project: a responsive yoga studio website 
 
 Run `npm run build` to create a production build in the `dist` folder.
 
-## Deployment
-
-The GitHub Actions workflow builds and deploys the site to Azure Static Web Apps when you push changes to the `main` branch. The Azure deployment token is stored as a GitHub Actions secret.
-
 ## Project status
 
-This is a learning and portfolio project. The contact form currently shows a confirmation message but does not send the entered information to a server.
+This is a learning and portfolio project. It is not currently presented as a live website. The contact form is a frontend demonstration: it shows a message but does not send the entered information to a server.
+
+The repository contains a GitHub Actions workflow for Azure Static Web Apps. The presence of this workflow does not mean the site is currently deployed.
