@@ -1,73 +1,40 @@
-# React + TypeScript + Vite
+# Soul Flow Yoga
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Soul Flow Yoga is a personal learning project: a responsive yoga studio website built with React and TypeScript. I created it to practise frontend development and deploying a website to Microsoft Azure.
 
-Currently, two official plugins are available:
+**Live site:** https://nice-moss-08af67210.7.azurestaticapps.net
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What I built
 
-## React Compiler
+- A single-page website with home, about, classes, and contact sections
+- Reusable React components styled for different screen sizes
+- A contact form interface for practising React state and form handling
+- An automated deployment workflow using GitHub Actions and Azure Static Web Apps
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+- React and TypeScript
+- Vite
+- CSS
+- GitHub Actions
+- Microsoft Azure Static Web Apps
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Run locally
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Clone or download this repository.
+2. Open a terminal in the project folder.
+3. Run `npm install`.
+4. Run `npm run dev`.
+5. Open the local address shown in the terminal.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Build
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Run `npm run build` to create a production build in the `dist` folder.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Deployment
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The GitHub Actions workflow builds and deploys the site to Azure Static Web Apps when you push changes to the `main` branch. The Azure deployment token is stored as a GitHub Actions secret.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Project status
+
+This is a learning and portfolio project. The contact form currently shows a confirmation message but does not send the entered information to a server.
